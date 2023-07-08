@@ -11,17 +11,10 @@ Step1: Clone AIShotPoseAnalyzerProject onto your computer.
 Step2: Clone OpenPose (https://github.com/CMU-Perceptual-Computing-Lab/openpose) and 3d-pose-baseline (https://github.com/ArashHosseini/3d-pose-baseline) into the project folder.  
 For bug fix, make sure you are using the openpose-3dpose-sandbox.py and viz.py from AIShotPoseAnalyzerProject instead of the original ones.
 Step3: Compile OpenPose, remember to tick BUILD_PYTHON in CMake-GUI.  
-Step4: Run the following commands:
-```
-cd ../AIShotPoseAnalyzerProject/  
-mkdir Resources/  
-cd Resources/  
-mkdir Videos/
-```  
-Then put your video under ../AIShotPoseAnalyzerProject/Resources/Videos/  
+Step4: Record your video, locate your shot, edit it to a proper length, and then put it under ../AIShotPoseAnalyzerProject/Resources/Videos/  
 Step5: Run aispa_video_reader.py, enter the complete file name (with extension name) of your video.  
-Then you can find Json Files under ../AIShotPoseAnalyzerProject/OutputFiles/Videos/[VideoFileNameWithoutExtensionName]/JsonFiles  
-You can also find the rendered pictures of each frame in PNG under ../AIShotPoseAnalyzerProject/OutputFiles/Videos/[VideoFileNameWithoutExtensionName]/FrameImageFiles  
+Then you can find Json Files under ../AIShotPoseAnalyzerProject/OutputFiles/Videos/[VideoFileNameWithoutExtensionName]/JsonFiles/  
+You can also find the rendered pictures of each frame in PNG under ../AIShotPoseAnalyzerProject/OutputFiles/Videos/[VideoFileNameWithoutExtensionName]/FrameImageFiles/  
 Step6: Use 3d-pose-baseline to generate 2d_data.json and 3d_data.json from the folder JsonFiles.  
 Command:
 ```
@@ -32,7 +25,7 @@ Step7: Run aispa_json_file_reader.py, enter the complete file name (with extensi
 
 PS:
 1. If tensorflow-gpu doesn't works, use tensorflow instead.
-2. If errors occur when you are using 3d-pose-baseline to generate 2d_data.json and 3d_data.json, use the command python -m pip install to install the missing modules.
+2. If errors occur when you are using 3d-pose-baseline to generate 2d_data.json and 3d_data.json, either should you use the command mkdir to create necessary directories under ../AIShotPoseAnalyzerProject/3d-pose-baseline/ or use the command python -m pip install to install the missing modules.
 3. 3d-pose-baseline original repository: https://github.com/una-dinosauria/3d-pose-baseline, but we are using its OpenPose-supported fork.
 4. Citing (BibTex):
 ```
