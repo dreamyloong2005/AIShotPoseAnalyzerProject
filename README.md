@@ -23,7 +23,10 @@ Step5: Run aispa_video_reader.py, enter the complete file name (with extension n
 Then you can find Json Files under ../AIShotPoseAnalyzerProject/OutputFiles/Videos/[VideoFileNameWithoutExtensionName]/JsonFiles  
 You can also find the rendered pictures of each frame in PNG under ../AIShotPoseAnalyzerProject/OutputFiles/Videos/[VideoFileNameWithoutExtensionName]/FrameImageFiles  
 Step6: Use 3d-pose-baseline to generate 2d_data.json and 3d_data.json from the folder JsonFiles.  
-Command: "python src/openpose_3dpose_sandbox.py --camera_frame --residual --batch_norm --dropout 0.5 --max_norm --evaluateActionWise --use_sh --epochs 200 --load 4874200 --pose_estimation_json /path/to/json_directory --write_gif --gif_fps 24", "--write_gif --gif_fps 24" is optional.  
+Command:
+···python src/openpose_3dpose_sandbox.py --camera_frame --residual --batch_norm --dropout 0.5 --max_norm --evaluateActionWise --use_sh --epochs 200 --load 4874200 --pose_estimation_json /path/to/json_directory --write_gif --gif_fps 24
+···
+PS: --write_gif --gif_fps 24" is optional, if you don't want to generate a gif file, delete it.  
 Step7: Run aispa_json_file_reader.py, enter the complete file name (with extension name) of your video, and you will see the visualized analysis results.
 
 PS:
