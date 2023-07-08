@@ -14,7 +14,7 @@ Step3: Compile OpenPose, remember to tick BUILD_PYTHON in CMake-GUI.
 Step4: Record your shot video, locate your shot, edit the video clip to a proper length, and then put it under ../AIShotPoseAnalyzerProject/Resources/Videos/  
 Step5: Run aispa_video_reader.py, enter the complete file name (with extension name) of your video.  
 Then you can find Json Files generated under ../AIShotPoseAnalyzerProject/OutputFiles/Videos/[VideoFileNameWithoutExtensionName]/JsonFiles/  
-You can also find the rendered pictures of each frame in PNG under ../AIShotPoseAnalyzerProject/OutputFiles/Videos/[VideoFileNameWithoutExtensionName]/FrameImageFiles/  
+You can also find the rendered pictures of each frame in PNG generated under ../AIShotPoseAnalyzerProject/OutputFiles/Videos/[VideoFileNameWithoutExtensionName]/FrameImageFiles/  
 Step6: Use 3d-pose-baseline to generate 2d_data.json and 3d_data.json from the folder JsonFiles.  
 Command:
 ```
