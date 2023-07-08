@@ -24,7 +24,7 @@ PS: --write_gif --gif_fps 24" is optional, if you don't want to generate a gif f
 Step7: Run aispa_json_file_reader.py, enter the complete file name (with extension name) of your video, and you will see the visualized analysis results.
 
 PS:
-1. If tensorflow-gpu doesn't works, use tensorflow instead.
+1. If tensorflow-gpu doesn't work, use tensorflow instead.
 2. If errors occur when you are using 3d-pose-baseline to generate 2d_data.json and 3d_data.json, either should you use the command mkdir to create necessary directories under ../AIShotPoseAnalyzerProject/3d-pose-baseline/ or use the command python -m pip install to install the missing modules.
 3. 3d-pose-baseline original repository: https://github.com/una-dinosauria/3d-pose-baseline, but we are using its OpenPose-supported fork.
 4. Citing (BibTex):
