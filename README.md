@@ -9,7 +9,7 @@ First make sure you have installed these softwares already:
 Now let's get started.  
 Step1: Clone AIShotPoseAnalyzerProject onto your computer.  
 Step2: Clone OpenPose (https://github.com/CMU-Perceptual-Computing-Lab/openpose) and 3d-pose-baseline (https://github.com/ArashHosseini/3d-pose-baseline) into the project folder.  
-For bug fix, make sure you are using the openpose-3dpose-sandbox.py and viz.py from AIShotPoseAnalyzerProject instead of the original ones.
+For bug fix, make sure you are using the openpose-3dpose-sandbox.py and viz.py from AIShotPoseAnalyzerProject instead of the original ones.  
 Step3: Compile OpenPose, remember to tick BUILD_PYTHON in CMake-GUI.  
 Step4: Record your shot video, locate your shot, edit the video clip to a proper length, and then put it under ../AIShotPoseAnalyzerProject/Resources/Videos/  
 Step5: Run aispa_video_reader.py, enter the complete file name (with extension name) of your video.  
